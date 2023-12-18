@@ -1,0 +1,113 @@
+[
+    {
+        "id": 1,
+        "title": "Jinxd Sun T-shirt",
+        "short_description": "This is the short description",
+        "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
+        "image_square": "Tshirt2-sqaure.jpg",
+        "image_long": "Tshirt2-long.jpg",
+        "price": 22.91,
+        "btw": 21,
+        "quantity": 30,
+        "category": "T-shirts"
+
+    }, 
+    {
+        "id": 2,
+        "title": "Jinxd Dagger Tshirt",
+        "short_description": "This is the short description",
+        "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
+        "image_square": "Tshirt1-sqaure.jpg",
+        "image_long": "Tshirt1-long.jpg",
+        "price": 28.44,
+        "btw": 21,
+        "quantity": 25,
+        "category": "T-shirts"
+
+    },
+    {
+        "id": 3,
+        "title": "Jinxd Variant Tshirt",
+        "short_description": "This is the short description",
+        "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
+        "image_square": "Tshirt3-sqaure.jpg",
+        "image_long": "Tshirt3-long.jpg",
+        "price": 22.91,
+        "btw": 21,
+        "quantity": 20,
+        "category": "T-shirts"
+
+    },
+    {
+        "id": 4,
+        "title": "Jinxd Sun Socks - 4 pack",
+        "short_description": "This is the short description",
+        "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
+        "image_square": "Socks-small-sqaure-white.jpg",
+        "image_long": "Socks-long-sqaure-white.jpg",
+        "price": 12.64,
+        "btw": 21,
+        "quantity": 15,
+        "category": "Socks"
+    },
+    {
+        "id": 5,
+        "title": "Jinxd Sun Socks - 2 pack",
+        "short_description": "This is the short description",
+        "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
+        "image_square": "Socks-small-sqaure-white.jpg",
+        "image_long": "Socks-long-sqaure-white.jpg",
+        "price": 7.11,
+        "btw": 21,
+        "quantity": 10,
+        "category": "Socks"
+    },
+    {
+        "id": 6,
+        "title": "Jinxd Sun Socks - 2 pack",
+        "short_description": "This is the short description",
+        "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
+        "image_square": "Socks-small-sqaure-white.jpg",
+        "image_long": "Socks-long-sqaure-white.jpg",
+        "price": 7.11,
+        "btw": 21,
+        "quantity": 10,
+        "category": "Socks"
+    },
+    {
+        "id": 7,
+        "title": "Jinxd Sun Socks - 2 pack",
+        "short_description": "This is the short description",
+        "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
+        "image_square": "Socks-small-sqaure-white.jpg",
+        "image_long": "Socks-long-sqaure-white.jpg",
+        "price": 7.11,
+        "btw": 21,
+        "quantity": 10,
+        "category": "Socks"
+    },
+    {
+        "id": 8,
+        "title": "Jinxd Sun Socks - 2 pack",
+        "short_description": "This is the short description",
+        "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
+        "image_square": "Socks-small-sqaure-white.jpg",
+        "image_long": "Socks-long-sqaure-white.jpg",
+        "price": 7.11,
+        "btw": 21,
+        "quantity": 10,
+        "category": "Socks"
+    },
+    {
+        "id": 9,
+        "title": "Jinxd Sun Socks - 2 pack",
+        "short_description": "This is the short description",
+        "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
+        "image_square": "Socks-small-sqaure-white.jpg",
+        "image_long": "Socks-long-sqaure-white.jpg",
+        "price": 7.11,
+        "btw": 21,
+        "quantity": 10,
+        "category": "Socks"
+    }
+]

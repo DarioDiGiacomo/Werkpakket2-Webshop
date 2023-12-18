@@ -1,0 +1,65 @@
+// COLORS
+$pure-black: #000;
+$pure-white: #fff;
+$color-black: #081F1C;
+$color-white: #F2F7F6;
+
+
+$primary-color: #106C5C;
+$secondary-color: #C7D8CC;
+$tertiary-color: #597F79;
+$forthiary-color: #2D3936;
+
+// Fonts
+
+$font-staatliches: 'staatliches', cursive;
+$font-spectral: 'spectral', serif;
+$font-sedgwick: 'Sedgwick Ave Display', cursive;
+$font-grace: 'Covered by your grace', cursive;
+
+// Mixins
+
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexAround() {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flexColumn() {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+body {
+    background-color: $pure-white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
