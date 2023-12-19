@@ -6,12 +6,12 @@ export default {
   data() {
     return {
       products: useProductStore(),
+      shoppingCart: useCartStore(),
       assetUrl: "http://localhost:5173/src/assets/",
-      selectedQuantity: 1,
+      quantity: 1,
       isOutOfStock: false,
       showNotification: false,
       notificationMessage: "",
-      shoppingCart: useCartStore(),
     };
   },
 
@@ -25,25 +25,24 @@ export default {
 
   methods: {
     addToCart() {
-      // if (this.selectedQuantity > 0 && this.selectedQuantity <= this.product.quantity) {
+      if (this.quantity > 0 && this.quantity <= this.product.quantity) {
         // Update the stock dynamically
-        // this.product.quantity -= this.selectedQuantity;
+        this.product.quantity -= this.quantity;
 
         // Gebruik de winkelwagenstore om het product aan de winkelwagen toe te voegen
         // const cartStore = useCartStore();
         // cartStore.addToCart({
         //   productId: this.product.id,
-        //   quantity: this.selectedQuantity,
+        //   quantity: this.quantity,
         // });
         console.log('button pressed')
 
         const cartItem = {
           product: this.product, 
-          quantity: this.selectedQuantity,
+          quantity: this.quantity,
         }
 
         console.log('added')
-        console.log(cartItem)
 
 
 
@@ -55,15 +54,15 @@ export default {
 
         // Toon de melding
         this.showNotification = true;
-        this.notificationMessage = `You added ${this.selectedQuantity} ${this.selectedQuantity === 1 ? this.product.title : `${this.product.title}s`} to your cart.`;
+        this.notificationMessage = `You added ${this.quantity} ${this.quantity === 1 ? this.product.title : `${this.product.title}s`} to your cart.`;
 
         // Verberg de melding na een paar seconden
         setTimeout(() => {
           this.showNotification = false;
         }, 5000);
-      // } else {
-      //   alert('Invalid quantity');
-      // }
+      } else {
+        alert('Invalid quantity');
+      }
     },
   },
 };
@@ -87,8 +86,8 @@ export default {
                 <div class="detail-text-color-white"></div>
                 <div class="detail-text-color-cream"></div>
             </div>
-            <input type="number" v-model="selectedQuantity" :max="product.quantity" class="detail-text-quantity">
-            <button @click="addToCart" :disabled="product.quantity === 0 || selectedQuantity <= 0" class="detail-text-button">{{ isOutOfStock ? 'Out of Stock' : 'Add to Cart' }}</button>
+            <input type="number" v-model="quantity" :max="product.quantity" class="detail-text-quantity">
+            <button @click="addToCart" :disabled="product.quantity === 0 || quantity <= 0" class="detail-text-button">{{ isOutOfStock ? 'Out of Stock' : 'Add to Cart' }}</button>
                 <h2 class="detail-text-info">Product details</h2>
             <p class="detail-text-infotext"><span>GENDER:</span> Unisex</p>
             <p class="detail-text-infotext"><span>FABRIC:</span> 100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose</p>

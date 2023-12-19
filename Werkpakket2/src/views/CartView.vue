@@ -5,32 +5,32 @@ import { useCartStore } from '@/stores/cartStore.js';
 export default {
     data() {
         return {
-            cartStore: useCartStore(),
+            shoppingCart: useCartStore(),
             products: useProductStore(),
         };
     },
 
-    methods: {
-        removeItem(index) {
-            this.cartStore.removeFromCart(index);
-        },
-    },
+    created() {
+        console.log(this.shoppingCart.cartItems.length + ' 4')
+    }
+
 };
 </script>
 
 <template>
     <div class="shopping-cart">
         <h2>Winkelwagentje</h2>
-        <div v-if="cartStore.cartItems.length === 0" class="empty-cart-message">
+        <div v-if="shoppingCart.cartItems.length === 0" class="empty-cart-message">
             <p>Je winkelwagentje is leeg.</p>
         </div>
         <div v-else>
-            <div v-for="(product, index) in cartStore.cartItems" :key="index" class="cart-item">
+            <div v-for="(product, index) in shoppingCart.cartItems" :key="index" class="cart-item">
                 <div class="item-details">
-                    <p class="item-name">{{ products.title}}</p>
-                    <p class="item-price">€{{ product.product.price }}</p>
+                    <p class="item-name">{{ product.title}}</p>
+                    <p class="item-price">€{{ product.price }}</p>
                 </div>
-                <button @click="removeItem(index)" class="remove-button">Verwijderen</button>
+                <button class="remove-button">Verwijderen</button>
+                <!-- @click="removeItem(index)" -->
             </div>
             <div class="total-section">
                 <p class="total-label">Totaal:</p>

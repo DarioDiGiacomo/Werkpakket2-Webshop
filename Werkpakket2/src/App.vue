@@ -2,7 +2,6 @@
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 import json from './products.json'
-import { RouterView } from 'vue-router'
 
 export default {
     data() {
@@ -13,7 +12,6 @@ export default {
     components: {
     HeaderComponent,
     FooterComponent,
-    RouterView
 }
 }
 </script>
