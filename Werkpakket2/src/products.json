@@ -10,7 +10,12 @@
         "price": 24.99 ,
         "btw": 21,
         "quantity": 50,
-        "category": "T-shirts"
+        "category": "T-shirts",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
 
     }, 
     {
@@ -24,7 +29,12 @@
         "price": 28.44,
         "btw": 21,
         "quantity": 45,
-        "category": "T-shirts"
+        "category": "T-shirts",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
 
     },
     {
@@ -38,7 +48,12 @@
         "price": 22.91,
         "btw": 21,
         "quantity": 25,
-        "category": "T-shirts"
+        "category": "T-shirts",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
 
     },
     {
@@ -52,7 +67,12 @@
         "price": 12.64,
         "btw": 21,
         "quantity": 25,
-        "category": "Socks"
+        "category": "Socks",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
     },
     {
         "id": 5,
@@ -65,7 +85,12 @@
         "price": 7.11,
         "btw": 21,
         "quantity": 10,
-        "category": "Socks"
+        "category": "Socks",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
     },
 
     {
@@ -79,7 +104,12 @@
         "price": 24.99 ,
         "btw": 21,
         "quantity": 25,
-        "category": "T-shirts"
+        "category": "T-shirts",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
 
     },
 
@@ -94,7 +124,12 @@
         "price": 28.44,
         "btw": 21,
         "quantity": 20,
-        "category": "T-shirts"
+        "category": "T-shirts",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
 
     },
 
@@ -109,7 +144,12 @@
         "price": 22.91,
         "btw": 21,
         "quantity": 20,
-        "category": "T-shirts"
+        "category": "T-shirts",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
 
     },
 
@@ -124,7 +164,12 @@
         "price": 12.64,
         "btw": 21,
         "quantity": 30,
-        "category": "Socks"
+        "category": "Socks",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
     },
 
     {
@@ -138,7 +183,12 @@
         "price": 12.64,
         "btw": 21,
         "quantity": 15,
-        "category": "Socks"
+        "category": "Socks",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
     },
 
     {
@@ -152,7 +202,12 @@
         "price": 24.99 ,
         "btw": 21,
         "quantity": 50,
-        "category": "T-shirts"
+        "category": "T-shirts",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
 
     },
 
@@ -167,7 +222,12 @@
         "price": 28.44,
         "btw": 21,
         "quantity": 10,
-        "category": "T-shirts"
+        "category": "T-shirts",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
 
     },
 
@@ -182,7 +242,12 @@
         "price": 22.91,
         "btw": 21,
         "quantity": 5,
-        "category": "T-shirts"
+        "category": "T-shirts",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
 
     },
 
@@ -197,7 +262,12 @@
         "price": 24.99 ,
         "btw": 21,
         "quantity": 5,
-        "category": "T-shirts"
+        "category": "T-shirts",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
 
     },
 
@@ -212,7 +282,12 @@
         "price": 28.44,
         "btw": 21,
         "quantity": 25,
-        "category": "T-shirts"
+        "category": "T-shirts",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
 
     },
 
@@ -227,7 +302,12 @@
         "price": 22.91,
         "btw": 21,
         "quantity": 45,
-        "category": "T-shirts"
+        "category": "T-shirts",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
 
     },
     {
@@ -241,7 +321,12 @@
         "price": 38.91,
         "btw": 21,
         "quantity": 45,
-        "category": "Hoodies"
+        "category": "Hoodies",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
 
     },
     {
@@ -255,7 +340,12 @@
         "price": 38.91,
         "btw": 21,
         "quantity": 20,
-        "category": "Hoodies"
+        "category": "Hoodies",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
 
     },
     {
@@ -269,7 +359,12 @@
         "price": 38.91,
         "btw": 21,
         "quantity": 100,
-        "category": "Hoodies"
+        "category": "Hoodies",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
 
     },
     {
@@ -283,7 +378,13 @@
         "price": 38.91,
         "btw": 21,
         "quantity": 100,
-        "category": "Hats"
+        "category": "Hats",
+        "gender": "Unisex",
+        "fabric": "100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose",
+        "weight": "175 g/m² Colours: 180 g/m²",
+        "available_sizes": "XS - S - M - L - XL - 2XL",
+        "laundry_temperature": "Laundry wash at or below 40°C"
+        
 
     }
 

@@ -107,11 +107,11 @@ export default {
             <input type="number" v-model="quantity" :max="product.quantity" class="detail-text-quantity">
             <button @click="addToCart" :disabled="product.quantity === 0 || quantity <= 0" class="detail-text-button">{{ isOutOfStock ? 'Out of Stock' : 'Add to Cart' }}</button>
                 <h2 class="detail-text-info">Product details</h2>
-            <p class="detail-text-infotext"><span>GENDER:</span> Unisex</p>
-            <p class="detail-text-infotext"><span>FABRIC:</span> 100% Ringspun Cotton *Light Oxford 93% Cotton, 7% Viscose</p>
-            <p class="detail-text-infotext"><span>WEIGHT:</span> White: 175 g/m² Colours: 180 g/m²</p>
-            <p class="detail-text-infotext"><span>AVAILABLE SIZES:</span> XS - S - M - L - XL - 2XL</p>
-            <p class="detail-text-infotext"><span>LAUNDRY TEMPERATURE:</span> Laundry wash at or below 40°C</p>
+            <p class="detail-text-infotext"><span>GENDER:</span> {{product.gender}}</p>
+            <p class="detail-text-infotext"><span>FABRIC:</span> {{product.fabric}}</p>
+            <p class="detail-text-infotext"><span>WEIGHT:</span> {{product.weight}}</p>
+            <p class="detail-text-infotext"><span>AVAILABLE SIZES:</span> {{product.available_sizes}}</p>
+            <p class="detail-text-infotext"><span>LAUNDRY TEMPERATURE:</span> {{product.laundry_temperature}}</p>
         </div>
 
         <div v-if="showNotification" class="notification">
