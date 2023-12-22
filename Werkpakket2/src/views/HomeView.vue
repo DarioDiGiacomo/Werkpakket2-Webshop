@@ -1,5 +1,5 @@
 <script>
-import PopularProductsComponent from '../components/PopularProductsComponent.vue'
+import PopularProductsComponent from '@/components/PopularProductsComponent.vue'
 
 export default {
     components: {

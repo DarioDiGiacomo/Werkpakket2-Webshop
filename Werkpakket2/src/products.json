@@ -4,11 +4,12 @@
         "title": "Jinxd Sun T-shirt",
         "short_description": "This is the short description",
         "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
-        "image_square": "Tshirt2-sqaure.jpg",
-        "image_long": "Tshirt2-long.jpg",
-        "price": 22.91,
+        "image_square": "Tshirt2-square-white.jpg",
+        "image_long": "Tshirt2-long-white.jpg",
+        "image_blank": "Tshirt2.jpg",
+        "price": 24.99 ,
         "btw": 21,
-        "quantity": 30,
+        "quantity": 50,
         "category": "T-shirts"
 
     }, 
@@ -17,11 +18,12 @@
         "title": "Jinxd Dagger Tshirt",
         "short_description": "This is the short description",
         "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
-        "image_square": "Tshirt1-sqaure.jpg",
-        "image_long": "Tshirt1-long.jpg",
+        "image_square": "Tshirt1-square-white.jpg",
+        "image_long": "Tshirt1-long-white.jpg",
+        "image_blank": "Tshirt1.jpg",
         "price": 28.44,
         "btw": 21,
-        "quantity": 25,
+        "quantity": 45,
         "category": "T-shirts"
 
     },
@@ -30,11 +32,12 @@
         "title": "Jinxd Variant Tshirt",
         "short_description": "This is the short description",
         "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
-        "image_square": "Tshirt3-sqaure.jpg",
-        "image_long": "Tshirt3-long.jpg",
+        "image_square": "Tshirt3-square-white.jpg",
+        "image_long": "Tshirt3-long-white.jpg",
+        "image_blank": "Tshirt3.jpg",
         "price": 22.91,
         "btw": 21,
-        "quantity": 20,
+        "quantity": 25,
         "category": "T-shirts"
 
     },
@@ -43,11 +46,12 @@
         "title": "Jinxd Sun Socks - 4 pack",
         "short_description": "This is the short description",
         "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
-        "image_square": "Socks-small-sqaure-white.jpg",
+        "image_square": "Socks-small-square-white.jpg",
         "image_long": "Socks-long-white.jpg",
+        "image_blank": "Socks-small-square-white.jpg",
         "price": 12.64,
         "btw": 21,
-        "quantity": 15,
+        "quantity": 25,
         "category": "Socks"
     },
     {
@@ -55,95 +59,232 @@
         "title": "Jinxd Sun Socks - 2 pack",
         "short_description": "This is the short description",
         "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
-        "image_square": "Socks-small-sqaure-white.jpg",
-        "image_long": "Socks-long-sqaure-white.jpg",
+        "image_square": "Socks-small-square-white.jpg",
+        "image_long": "Socks-long-square-white.jpg",
+        "image_blank": "Socks-small-square-white.jpg",
         "price": 7.11,
         "btw": 21,
         "quantity": 10,
         "category": "Socks"
     },
+
     {
         "id": 6,
-        "title": "Jinxd Sun Socks - 2 pack",
+        "title": "Jinxd Sun T-shirt",
         "short_description": "This is the short description",
         "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
-        "image_square": "Socks-small-sqaure-white.jpg",
-        "image_long": "Socks-long-sqaure-white.jpg",
-        "price": 7.11,
+        "image_square": "Tshirt2-square-black.jpg",
+        "image_long": "Tshirt2-long-black.jpg",
+        "image_blank": "Tshirt2-black.jpg",
+        "price": 24.99 ,
         "btw": 21,
-        "quantity": 10,
-        "category": "Socks"
+        "quantity": 25,
+        "category": "T-shirts"
+
     },
+
     {
         "id": 7,
-        "title": "Jinxd Sun Socks - 2 pack",
+        "title": "Jinxd Dagger Tshirt",
         "short_description": "This is the short description",
         "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
-        "image_square": "Socks-small-sqaure-white.jpg",
-        "image_long": "Socks-long-sqaure-white.jpg",
-        "price": 7.11,
+        "image_square": "Tshirt1-square-black.jpg",
+        "image_long": "Tshirt1-long-black.jpg",
+        "image_blank": "Tshirt1-black.jpg",
+        "price": 28.44,
         "btw": 21,
-        "quantity": 10,
-        "category": "Socks"
+        "quantity": 20,
+        "category": "T-shirts"
+
     },
+
     {
         "id": 8,
-        "title": "Jinxd Sun Socks - 2 pack",
+        "title": "Jinxd Variant Tshirt",
         "short_description": "This is the short description",
         "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
-        "image_square": "Socks-small-sqaure-white.jpg",
-        "image_long": "Socks-long-sqaure-white.jpg",
-        "price": 7.11,
+        "image_square": "Tshirt3-square-black.jpg",
+        "image_long": "Tshirt3-long-black.jpg",
+        "image_blank": "Tshirt3-black.jpg",
+        "price": 22.91,
         "btw": 21,
-        "quantity": 10,
-        "category": "Socks"
+        "quantity": 20,
+        "category": "T-shirts"
+
     },
+
     {
         "id": 9,
-        "title": "Jinxd Sun Socks - 2 pack",
+        "title": "Jinxd Sun Socks - 4 pack",
         "short_description": "This is the short description",
         "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
-        "image_square": "Socks-small-sqaure-white.jpg",
-        "image_long": "Socks-long-sqaure-white.jpg",
-        "price": 7.11,
+        "image_square": "Socks-small-square-black.jpg",
+        "image_long": "Socks-long-black.jpg",
+        "image_blank": "Socks-small-square-black.jpg",
+        "price": 12.64,
         "btw": 21,
-        "quantity": 10,
+        "quantity": 30,
         "category": "Socks"
     },
+
     {
         "id": 10,
         "title": "Jinxd Sun Socks - 2 pack",
         "short_description": "This is the short description",
         "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
-        "image_square": "Socks-small-sqaure-white.jpg",
-        "image_long": "Socks-long-sqaure-white.jpg",
-        "price": 7.11,
+        "image_square": "Socks-small-square-black.jpg",
+        "image_long": "Socks-long-black.jpg",
+        "image_blank": "Socks-small-square-black.jpg",
+        "price": 12.64,
         "btw": 21,
-        "quantity": 10,
+        "quantity": 15,
         "category": "Socks"
     },
+
     {
         "id": 11,
-        "title": "Jinxd Sun Socks - 2 pack",
+        "title": "Jinxd Sun T-shirt",
         "short_description": "This is the short description",
         "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
-        "image_square": "Socks-small-sqaure-white.jpg",
-        "image_long": "Socks-long-sqaure-white.jpg",
-        "price": 7.11,
+        "image_square": "Tshirt2-square-cream.jpg",
+        "image_long": "Tshirt2-long-cream.jpg",
+        "image_blank": "Tshirt2-cream.jpg",
+        "price": 24.99 ,
         "btw": 21,
-        "quantity": 10,
-        "category": "Socks"
+        "quantity": 50,
+        "category": "T-shirts"
+
     },
+
     {
         "id": 12,
-        "title": "Jinxd Sun Socks - 2 pack",
+        "title": "Jinxd Dagger Tshirt",
         "short_description": "This is the short description",
         "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
-        "image_square": "Socks-small-sqaure-white.jpg",
-        "image_long": "Socks-long-sqaure-white.jpg",
-        "price": 7.11,
+        "image_square": "Tshirt1-square-cream.jpg",
+        "image_long": "Tshirt1-long-cream.jpg",
+        "image_blank": "Tshirt1-cream.jpg",
+        "price": 28.44,
         "btw": 21,
         "quantity": 10,
-        "category": "Socks"
+        "category": "T-shirts"
+
+    },
+
+    {
+        "id": 13,
+        "title": "Jinxd Variant Tshirt",
+        "short_description": "This is the short description",
+        "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
+        "image_square": "Tshirt3-square-cream.jpg",
+        "image_long": "Tshirt3-long-cream.jpg",
+        "image_blank": "Tshirt3-cream.jpg",
+        "price": 22.91,
+        "btw": 21,
+        "quantity": 5,
+        "category": "T-shirts"
+
+    },
+
+    {
+        "id": 14,
+        "title": "Jinxd Sun T-shirt",
+        "short_description": "This is the short description",
+        "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
+        "image_square": "Tshirt2-square-brown.jpg",
+        "image_long": "Tshirt2-long-brown.jpg",
+        "image_blank": "Tshirt2-brown.jpg",
+        "price": 24.99 ,
+        "btw": 21,
+        "quantity": 5,
+        "category": "T-shirts"
+
+    },
+
+    {
+        "id": 15,
+        "title": "Jinxd Dagger Tshirt",
+        "short_description": "This is the short description",
+        "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
+        "image_square": "Tshirt1-square-brown.jpg",
+        "image_long": "Tshirt1-long-brown.jpg",
+        "image_blank": "Tshirt1-brown.jpg",
+        "price": 28.44,
+        "btw": 21,
+        "quantity": 25,
+        "category": "T-shirts"
+
+    },
+
+    {
+        "id": 16,
+        "title": "Jinxd Variant Tshirt",
+        "short_description": "This is the short description",
+        "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
+        "image_square": "Tshirt3-square-brown.jpg",
+        "image_long": "Tshirt3-long-brown.jpg",
+        "image_blank": "Tshirt3-brown.jpg",
+        "price": 22.91,
+        "btw": 21,
+        "quantity": 45,
+        "category": "T-shirts"
+
+    },
+    {
+        "id": 17,
+        "title": "Jinxd Variant Hoodie",
+        "short_description": "This is the short description",
+        "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
+        "image_square": "hoodie-brown.jpg",
+        "image_long": "hoodie-long-brown.jpg",
+        "image_blank": "hoodie-brown.jpg",
+        "price": 38.91,
+        "btw": 21,
+        "quantity": 45,
+        "category": "Hoodies"
+
+    },
+    {
+        "id": 18,
+        "title": "Jinxd Variant Hoodie",
+        "short_description": "This is the short description",
+        "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
+        "image_square": "hoodie-black.jpg",
+        "image_long": "hoodie-long-black.jpg",
+        "image_blank": "hoodie-black.jpg",
+        "price": 38.91,
+        "btw": 21,
+        "quantity": 20,
+        "category": "Hoodies"
+
+    },
+    {
+        "id": 19,
+        "title": "Jinxd Variant Hoodie",
+        "short_description": "This is the short description",
+        "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
+        "image_square": "hoodie-white.jpg",
+        "image_long": "hoodie-long-white.jpg",
+        "image_blank": "hoodie-white.jpg",
+        "price": 38.91,
+        "btw": 21,
+        "quantity": 100,
+        "category": "Hoodies"
+
+    },
+    {
+        "id": 19,
+        "title": "Jinxd Variant Hat",
+        "short_description": "This is the short description",
+        "sizes": ["XS", "S", "M", "L", "Xl", "2XL"],
+        "image_square": "hat-square-black.jpg",
+        "image_long": "hat-long-black.jpg",
+        "image_blank": "hat-square-black.jpg",
+        "price": 38.91,
+        "btw": 21,
+        "quantity": 100,
+        "category": "Hats"
+
     }
+
 ]

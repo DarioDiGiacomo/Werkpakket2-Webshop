@@ -23,7 +23,7 @@ export default {
                         <img :src="'src/assets/' + product.image_square" :alt="product.title">  
                         <div class="card-overlay-text">
                             <h1 class="card-overlay-text-heading"> {{ product.title }} </h1>
-                            <p class="card-overlay-text-paragraph"> €{{ product.price }} <span>Excl. BTW</span></p>
+                            <p class="card-overlay-text-paragraph"> €{{ product.price }} <span>Incl. BTW</span></p>
                         </div>
                     </div>
                 <!-- </router-link> -->

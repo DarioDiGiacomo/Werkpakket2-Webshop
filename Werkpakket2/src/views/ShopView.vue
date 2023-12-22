@@ -48,6 +48,9 @@ export default {
     setFilter(filter) {
       this.selectedFilter = filter;
       this.filterProducts();
+      if (filter === "All") {
+        this.sortProductsByQuantity();
+      }
     },
 
     deleteFilter() {
@@ -77,11 +80,16 @@ export default {
       this.filteredProducts = filteredList;
       this.page = 1;
     },
+    sortProductsByQuantity() {
+      this.filteredProducts.sort((a, b) => b.quantity - a.quantity);
+      this.page = 1;
+    },
   },
 
 
   created() {
     this.filterProducts();
+    this.sortProductsByQuantity();
   },
 
 
@@ -105,6 +113,8 @@ export default {
         @click="setFilter('Hoodies')">Hoodies</button>
       <button class="filter-button" :class="{ 'active': selectedFilter === 'Socks' }"
         @click="setFilter('Socks')">Socks</button>
+      <button class="filter-button" :class="{ 'active': selectedFilter === 'Hats' }"
+        @click="setFilter('Hats')">Hats</button>
     </div>
 
     <div class="main-shop-cards">

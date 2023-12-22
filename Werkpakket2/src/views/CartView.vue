@@ -10,96 +10,81 @@ export default {
         };
     },
 
-    created() {
-        console.log(this.shoppingCart.cartItems.length + ' 4')
-    }
+    computed: {
+        product() {
+            const productId = this.$route.params.id;
+            // return this.products.productList.find((product) => product.id === parseInt(productId));
+            return this.products.getProductById(productId)
+        },
+    },
 
+    methods: {
+        removeProduct(product) {
+            this.shoppingCart.removeFromCart(product);
+        },
+
+        // Remove one quantity of a product from the cart
+        removeQuantity(product) {
+            this.shoppingCart.removeQuantity(product);
+        },
+
+        // Add one quantity of a product to the cart
+        addQuantity(product) {
+            this.shoppingCart.addQuantity(product);
+        },
+
+        goToCheckout() {
+            this.$router.push("/checkout")
+        }
+    }
 };
 </script>
 
 <template>
-    <div class="shopping-cart">
-        <h2>Winkelwagentje</h2>
-        <div v-if="shoppingCart.cartItems.length === 0" class="empty-cart-message">
-            <p>Je winkelwagentje is leeg.</p>
+    <div class="shoppingcart">
+        <h2>Shoppingcart</h2>
+        <div v-if="shoppingCart.cartItems.length === 0" class="shoppingcart-empty">
+            <p>IT LOOKS LIKE THIS CART IS <span>JINXD</span>.</p>
         </div>
         <div v-else>
-            <div v-for="(product, index) in shoppingCart.cartItems" :key="index" class="cart-item">
-                <div class="item-details">
-                    <p class="item-name">{{ product.title}}</p>
-                    <p class="item-price">€{{ product.price }}</p>
+            <div v-for="(product, index) in shoppingCart.cartItems" :key="index" class="shoppingcart-item">
+                <div class="shoppingcart-item-details">
+                    <img :src="'src/assets/' + product.product.image_blank" class="shoppingcart-item-details-img"
+                        :alt="product.product.title">
+                    <div class="shoppingcart-item-details-text">
+                        <p class="shoppingcart-item-details-text-name">{{ product.product.title }}</p>
+                        <p class="shoppingcart-item-details-text-price">€{{ product.product.price }} </p>
+                    </div>
                 </div>
-                <button class="remove-button">Verwijderen</button>
-                <!-- @click="removeItem(index)" -->
+                <button @click="removeQuantity(product)" class="shoppingcart-item-button">-</button>
+                <input type="text" class="shoppingcart-item-input" disabled :value="product.quantity">
+                <button @click="addQuantity(product)" class="shoppingcart-item-button">+</button>
+                <button @click="removeProduct(product)" class="shoppingcart-item-remove">Remove</button>
             </div>
-            <div class="total-section">
-                <p class="total-label">Totaal:</p>
-                <p class="total-amount">€</p>
+            <div class="shoppingcart-totalsection">
+                <div class="shoppingcart-totalsection-total">
+                    <h1 class="shoppingcart-totalsection-total-title">overview</h1>
+                    <div class="shoppingcart-totalsection-total-prices">
+                        <p class="shoppingcart-totalsection-total-prices-label">SubTotal:</p>
+                        <p class="shoppingcart-totalsection-total-prices-amount">€ {{
+                            shoppingCart.totalPriceWithoutBTW.toFixed(2) }}</p>
+                    </div>
+                    <div class="shoppingcart-totalsection-total-prices">
+                        <p class="shoppingcart-totalsection-total-prices-label">Total:</p>
+                        <p class="shoppingcart-totalsection-total-prices-amount">€ {{ shoppingCart.totalPrice.toFixed(2) }}
+                        </p>
+                    </div>
+                </div>
+                <div class="shoppingcart-totalsection-buttons">
+                    <button class="shoppingcart-totalsection-buttons-button back ">Back To Store</button>
+                    <button @click="goToCheckout" class="shoppingcart-totalsection-buttons-button purchase">Purchase</button>
+                </div>
             </div>
+
         </div>
     </div>
 </template>
   
   
-<style scoped>
-.shopping-cart {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
-}
-
-.empty-cart-message {
-    font-size: 18px;
-    text-align: center;
-}
-
-.cart-item {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-}
-
-.item-details {
-    flex-grow: 1;
-}
-
-.item-name {
-    margin: 0;
-    font-size: 16px;
-}
-
-.item-price {
-    margin: 0;
-    color: #888;
-}
-
-.remove-button {
-    background-color: #dc3545;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.total-section {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.total-label {
-    margin: 0;
-}
-
-.total-amount {
-    margin: 0;
-    color: #28a745;
-}
+<style>
 </style>

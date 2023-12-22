@@ -1,17 +1,24 @@
 <script>
 import { useProductStore } from '@/stores/productStore.js';
 import { useCartStore } from '@/stores/cartStore.js';
+import { useAuthStore } from '@/stores/authStore.js';
 
 export default {
   data() {
     return {
       products: useProductStore(),
       shoppingCart: useCartStore(),
+      authStore: useAuthStore(),
       assetUrl: "http://localhost:5173/src/assets/",
       quantity: 1,
       isOutOfStock: false,
       showNotification: false,
+      showError: false,
       notificationMessage: "",
+      errorMessage: "You JINXD this quantity",
+      selectedSize: "select size",
+      sizeError: false,
+      
     };
   },
 
@@ -25,43 +32,53 @@ export default {
 
   methods: {
     addToCart() {
-      if (this.quantity > 0 && this.quantity <= this.product.quantity) {
-        // Update the stock dynamically
-        this.product.quantity -= this.quantity;
+      if (this.authStore.loggedIn) {
+        if (this.quantity > 0 && this.quantity <= this.product.quantity && this.selectedSize !== "select size") {
 
-        // Gebruik de winkelwagenstore om het product aan de winkelwagen toe te voegen
-        // const cartStore = useCartStore();
-        // cartStore.addToCart({
-        //   productId: this.product.id,
-        //   quantity: this.quantity,
-        // });
-        console.log('button pressed')
+          console.log('button pressed')
 
-        const cartItem = {
-          product: this.product, 
-          quantity: this.quantity,
-        }
+          const cartItem = {
+            id: `${this.product.id}-${this.selectedSize}`,
+            product: this.product,
+            quantity: this.quantity,
+            sizes: this.selectedSize,
+            
+          }
 
-        console.log('added')
+          console.log('added')
 
+          this.shoppingCart.addToCart(cartItem)
 
+          let productQuantity = this.product.quantity -= this.quantity;
+          // Controleer of het product nu uitverkocht is
+          this.isOutOfStock = productQuantity === 0;
 
-        this.shoppingCart.addToCart(cartItem)
+          console.log(productQuantity)
 
-        
-        // Controleer of het product nu uitverkocht is
-        this.isOutOfStock = this.product.quantity === 0;
+          // Toon de melding
+          this.showError = false;
+          this.showNotification = true;
+          this.notificationMessage = `You added ${this.quantity} ${this.quantity === 1 ? this.product.title : `${this.product.title}s`} to your cart.`;
 
-        // Toon de melding
-        this.showNotification = true;
-        this.notificationMessage = `You added ${this.quantity} ${this.quantity === 1 ? this.product.title : `${this.product.title}s`} to your cart.`;
+          // Verberg de melding na een paar seconden
+          setTimeout(() => {
+            this.showNotification = false;
+          }, 5000);
 
-        // Verberg de melding na een paar seconden
-        setTimeout(() => {
+          this.sizeError = false;
+        } else {
           this.showNotification = false;
-        }, 5000);
+          this.showError = true
+
+          this.sizeError = this.selectedSize === "select size";
+
+
+          setTimeout(() => {
+            this.showError = false;
+          }, 5000);
+        }
       } else {
-        alert('Invalid quantity');
+        this.$router.push("/login")
       }
     },
   },
@@ -77,7 +94,7 @@ export default {
         <div class="detail-text">
             <h1 class="detail-text-name"> {{product.title}}</h1>
             <p class="detail-text-price"> €{{product.price}}</p>
-            <select class="detail-text-size">
+            <select v-model="selectedSize" class="detail-text-size">
                 <option value="select size">Select Size</option>
                 <option v-for="size in product.sizes" :key="size">{{size}}</option>
             </select>
@@ -85,6 +102,7 @@ export default {
                 <div class="detail-text-color-black"></div>
                 <div class="detail-text-color-white"></div>
                 <div class="detail-text-color-cream"></div>
+                <div class="detail-text-color-brown"></div>
             </div>
             <input type="number" v-model="quantity" :max="product.quantity" class="detail-text-quantity">
             <button @click="addToCart" :disabled="product.quantity === 0 || quantity <= 0" class="detail-text-button">{{ isOutOfStock ? 'Out of Stock' : 'Add to Cart' }}</button>
@@ -94,15 +112,16 @@ export default {
             <p class="detail-text-infotext"><span>WEIGHT:</span> White: 175 g/m² Colours: 180 g/m²</p>
             <p class="detail-text-infotext"><span>AVAILABLE SIZES:</span> XS - S - M - L - XL - 2XL</p>
             <p class="detail-text-infotext"><span>LAUNDRY TEMPERATURE:</span> Laundry wash at or below 40°C</p>
-            <p class="detail-text-infotext"><span>LABELING:</span> Standard</p>
         </div>
 
         <div v-if="showNotification" class="notification">
         <p>{{ notificationMessage }}</p>
         </div>
+
+        <div v-if="showError" class="notification false">
+        <p>{{ errorMessage }}</p>
+        </div>
   </div>
 </template>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

@@ -25,14 +25,14 @@ export default {
   <header class="header">
         <div class="searchbar">
             <div class="searchbar-section">
-                <a href="#" class="icon"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+                <router-link to="/home" class="icon"><i class="fa-solid fa-magnifying-glass fa-xl"></i></router-link>
             </div>
             <div class="searchbar-section">
-                <a href="/home" class="logo"><img src="@/assets/Jinxd logo.svg" alt="Jinxd logo"></a>
+                <router-link to="/home" class="logo"><img src="@/assets/Jinxd logo.svg" alt="Jinxd logo"></router-link>
             </div>
             <div class="searchbar-section">
-                <a href="/login" class="icon"><i class="fa-solid fa-user fa-xl"></i></a>
-                <a href="/cart" class="icon"><i class="fa-solid fa-bag-shopping fa-xl"></i></a>
+                <router-link to="/login" class="icon"><i class="fa-solid fa-user fa-xl"></i></router-link>
+                <router-link to="/cart" class="icon"><i class="fa-solid fa-bag-shopping fa-xl"></i></router-link>
             </div>
         </div>
         <nav class="nav">
@@ -40,15 +40,6 @@ export default {
                 <div v-for="navItem in navItems" class="nav-list-item">
                 <li><router-link :to="navItem.path">{{ navItem.name }}</router-link></li>
                 </div>
-                <!-- <a href="index.html" >
-                    <li>home</li>
-                </a>
-                <a href="shop.html">
-                    <li>shop</li>
-                </a>
-                <a href="#">
-                    <li>contact</li>
-                </a> -->
             </ul>
         </nav>
     </header>

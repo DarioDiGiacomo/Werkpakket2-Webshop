@@ -1,0 +1,7 @@
+[
+    { "email": "daarieoo@gmail.com", "password": "WebGod", "name": "Dario Di Giacomo", "street": "Godlaan", "number": "999", "city": "Genk", "country": "Belgium", "phone": "0123456789" },
+    { "email": "Mike@gmail.com", "password": "SemiWebGod", "name": "Mike Wazowski", "street": "Superengestraatlaan", "number": "4", "city": "Zonhoven", "country": "Belgium", "phone": "9876543210" },
+    { "email": "Nathan@gmail.com", "password": "SpidermanKiller", "name": "Nathan Drake", "street": "Hespkaastostilaan", "number": "21", "city": "Ham", "country": "Unknown", "phone": "6942021078" },
+    { "email": "g1@gmail.com", "password": "w1", "name": "n1", "street": "str1", "number": "n1", "city": "c1", "country": "c1", "phone": "046543459" }
+
+  ]
